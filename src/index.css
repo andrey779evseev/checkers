@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+@layer utilities {
+    .field-shadow {
+        box-shadow:  20px 20px 60px #d69b87,
+        -20px -20px 60px #ffd1b7;
+        color: #96aec5;
+    }
+
+    .chip-shadow {
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    }
+
+    .chip-inner-shadow-dark {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    }
+
+    .chip-inner-shadow-light {
+        box-shadow: rgba(133, 133, 255, 0.25) 0px 30px 60px -12px inset, rgba(255, 255, 255, 0.3) 0px 18px 36px -18px inset;
+    }
+}
